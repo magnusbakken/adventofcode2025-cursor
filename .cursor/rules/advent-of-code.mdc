@@ -1,0 +1,7 @@
+# Advent of Code Rules
+
+- Name each file `dayNN.fsx`, where NN is the 0-prefixed day number, starting with `day01.fsx`.
+- Each day of Advent of Code has two parts. You will need to solve part 1 before being shown part 2.
+- Each task will be given in a file called e.g. `day01_part1.txt`, `day01_part2.txt`, `day02_part1.txt`, etc.
+- Each day has an associated input file, which will always be called `day01_input.txt`, `day02_input.txt`, etc.
+- The output of each task should simply be a line of console output for part 1, and then another one for part 2.
