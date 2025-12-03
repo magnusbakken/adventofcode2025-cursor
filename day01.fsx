@@ -25,9 +25,19 @@ let applyRotation position (direction, distance) =
             // For right rotation, we cross 0 every 100 clicks
             (position + distance) / 100
         | 'L' -> 
-            // For left rotation, we cross 0 when going backwards through it
-            // We hit 0 after 'position' clicks, then every 100 clicks after that
-            distance / 100 + (if distance % 100 > position then 1 else 0)
+            // For left rotation, we hit 0 when moving backwards through it
+            // We visit positions: position-1, position-2, ..., position-distance
+            // We hit 0 when position-k ≡ 0 (mod 100), i.e., k ≡ position (mod 100)
+            // So k = position, position+100, position+200, ... (within range [1, distance])
+            if position = 0 then
+                // If starting at 0, first hit is at k=100, then k=200, etc.
+                distance / 100
+            elif distance >= position then
+                // If we can reach 0, count: position, position+100, ...
+                (distance - position) / 100 + 1
+            else
+                // If distance < position, we never reach 0
+                0
         | _ -> failwith "Invalid direction"
     
     (finalPos, zeroCount)
