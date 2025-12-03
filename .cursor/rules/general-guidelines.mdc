@@ -1,0 +1,9 @@
+---
+alwaysApply: true
+---
+
+# General Guidelines
+
+- Include the prompt used to create each change in a top-level directory called `prompts/`. Each file should be a markdown file named with the current date/time in ISO format.
+- Give succinct answers.
+- At the end of each response, add the emoji 🤖 to make it clear that the rules are being picked up.

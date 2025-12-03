@@ -1,0 +1,13 @@
+---
+globs:
+  - "**/*.fs"
+  - "**/*.fsx"
+  - "**/*.fsi"
+alwaysApply: false
+---
+
+# F# Style Guide
+
+- Use F# for all the tasks.
+- Employ F# best practices. Prefer writing code in a pure functional style whenever possible.
+- Prefer terse code, without deliberately being obfuscating.
