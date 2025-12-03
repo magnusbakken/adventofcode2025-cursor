@@ -1,0 +1,14 @@
+---
+description: F# language best practices and coding standards
+globs:
+  - "**/*.fs"
+  - "**/*.fsx"
+  - "**/*.fsi"
+alwaysApply: false
+---
+
+# F# Rules
+
+- Use F# for all the tasks.
+- Employ F# best practices. Prefer writing code in a pure functional style whenever possible.
+- Prefer terse code, without deliberately being obfuscating.
