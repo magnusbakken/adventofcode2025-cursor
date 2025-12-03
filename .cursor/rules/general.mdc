@@ -6,5 +6,6 @@ alwaysApply: true
 # General Rules
 
 - Include the prompt used to create each change in a top-level directory called `prompts/`. Each file should be a markdown file named with the current date in ISO format followed by an incremented number padded with two zeroes, e.g. `2025-12-03-001.md`, `2025-12-03-002.md`, `2025-12-04-001.md`.
+- Never change the contents of existing files in the prompts folder. Only create new files with incremented numbers.
 - Give succinct answers.
 - At the end of each response, add the emoji 🤖 to make it clear that the rules are being picked up.
